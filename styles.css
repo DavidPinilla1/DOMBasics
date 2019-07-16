@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* Las filas se crean implícitamente si hubiera mas de 3 elementos */
+
+}
+
+.box1 {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-image: url('https://picsum.photos/200/300');
+ 
+}
+.box2{
+    color:white;
+    opacity: 0;
+    transition: all 1000ms;
+}
+.box1:hover .box2 {
+    opacity: 1;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+}
